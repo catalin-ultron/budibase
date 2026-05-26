@@ -15,11 +15,13 @@ Infra deps: CouchDB, Redis, MinIO, PostgreSQL (for LiteLLM).
 
 ## Plan
 - [x] Fork + clone repo, create feat/ultron-audit branch.
-- [ ] Run `yarn install` (background if >2 min).
-- [ ] Audit build scripts; try building the builder (Svelte/Vite frontend).
+- [x] Run `yarn install` (~2.5 min).
+- [x] Write STRUCTURE_NOTES.md and BUILD_NOTES.md.
+- [x] Build Tier 1 packages: types, shared-core, string-templates (all pass).
+- [ ] Build Tier 2 / builder frontend (attempt in progress).
 - [ ] If builder produces static output, deploy to WFP.
-- [ ] If builder needs a backend to be useful, consider creating a static landing/demo page from built assets.
-- [ ] Document status and push all commits.
+- [ ] If builder needs a backend to be useful, create a static landing/demo page.
+- [ ] Document final status and push all commits.
 
 ## Expected blockers
 - Full backend requires CouchDB + Redis + MinIO (not available in WFP).
